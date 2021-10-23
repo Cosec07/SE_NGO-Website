@@ -14,9 +14,7 @@
             
             <div class="col-1 shuffle-sizer"></div>
             {% for items in site.posts %}
-            {% assign category= site.categories | where: 'projects', page.categories |
-            first %} 
-            {% if category %}
+            {% if category='projects' %}
             <div class="col-lg-4 col-md-6 shuffle-item">
               <div class="project-img-container">
                 <a class="gallery-popup" href="/assets/images/projects/project1.jpg" aria-label="project-img">
